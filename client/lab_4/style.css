@@ -26,11 +26,10 @@ html {
 body {
   margin: 0;
   padding: 0;
-
   font-family: ‘Segoe UI’, Candara, ‘Bitstream Vera Sans’, ‘DejaVu Sans’, ‘Bitsream Vera Sans’, ‘Trebuchet MS’, Verdana, ‘Verdana Ref’, sans-serif;
   font-weight: 400;
   line-height: 1.5;
-  background-color: rgb(239, 239, 239);
+  background-color: rgb(231, 255, 254);
 }
 
 
@@ -39,14 +38,14 @@ a {
   text-decoration: none;
 }
 
-h2 {
+h2,h3 {
   margin:0;
   padding:0;
   padding-bottom:1.5rem;
 }
 
 form {
-  accent-color: hsla(120, 100%, 50%, 0.482);
+  accent-color: hsla(225, 100%, 50%, 0.482);
 }
 
 /*
@@ -92,8 +91,8 @@ form {
   /* this will push other blocks out of the way */
 
   /* colors */
-  background-color: #ffe08a;
-  color: #4a4a4a;
+  background-color: #dcc5ff;
+  color: #ff9191;
 
   /* shapes */
   border-radius: 6px;
@@ -128,18 +127,21 @@ form {
 }
 
 .left_section {
-  background-color: rgba(0, 139, 139, 0.8);
+  background-color: rgba(253, 216, 241, 0.8);
   flex: 0 1 auto;
   margin: 1rem;
   padding: 1.5rem;
 }
 
 .right_section {
-  background-color: rgba(255, 224, 138, 0.7);
+  background-color: rgba(210, 255, 212, 0.7);
   flex: 1 2 auto;
   margin: 1rem;
   align-items: center;
-  max-width: 450px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+
 }
 
 /*
@@ -151,13 +153,13 @@ form {
 .footer {
   flex-shrink: 0;
   padding: 1rem;
-  background-color: rgba(0, 139, 139, 0.8);
+  background-color: rgba(55, 0, 182, 0.8);
   font-size: 1.2rem;
   font-weight: 600;
 }
 
 .footer a {
-  color: rgba(255, 224, 138, 1);
+  color: rgb(255, 138, 138);
   text-decoration: underline;
 }
 
@@ -175,7 +177,7 @@ form {
 }
 
 .subtitle {
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(102, 57, 57, 0.8);
   margin: 0px;
   margin-bottom: 5px;
 }
@@ -263,6 +265,7 @@ div.carousel {
 
 .prev:hover,
 .next:hover {
+  background-color: #000000;
   /* Pick a good background colour for your hover pseudoclass */
 }
 
@@ -303,5 +306,8 @@ form label {
     /* check it out by using your developer tools to shrink your screen-size */
     .container {
       background-color: rgba(204, 8, 162, 0.65);
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
 }
