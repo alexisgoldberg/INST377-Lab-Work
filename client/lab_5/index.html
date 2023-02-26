@@ -23,11 +23,11 @@
       <div class="container">
         <div class="left_section box">
             <h3>Form Inputs</h3>
-          <form action="https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json" class='box'>
-            <small>Restaurant Name</small>
-            <label for="resto"></label>
-            <input type="text" id="resto" />
-            <button type="submit">Submit</button>
+          <form action="/api" class='box .main_form'>
+            <label for="resto">Restaurant Name</label>
+            <input type="text" name="resto" id="resto" />
+            <button type="'button">Filter Data</button>
+            <button type="submit">Load Data</button>
           </form>
         </div>
         <div class="right_section box">
@@ -36,6 +36,7 @@
         </div>
       </div>
     </div>
-  </body>
   <footer class="footer">alexisgoldberg <a href="http://github.com/alexisgoldberg" target="_blank" rel="noopener noreferrer">alexisgoldberg</a></footer>
+  <script src="script.js"></script>
+</body>
 </html>
