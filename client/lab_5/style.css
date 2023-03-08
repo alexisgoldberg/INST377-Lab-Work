@@ -158,8 +158,7 @@
   
   .footer {
     flex-shrink: 0;
-    position:sticky;
-    bottom: 0;
+    position: sticky;
     border: 2px dashed;
     border-color: #000000;
     padding: 1rem;
